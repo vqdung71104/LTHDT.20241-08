@@ -14,6 +14,11 @@ public class Virus implements Infectable, Displayable {
       this.capsid = new Capsid(capsidShape);
       this.nucleicAcid = new NucleicAcid(nucleicAcidType);
   }
+  
+  // Getter
+  public String getName() {
+    return name;
+}
 
   // Methods for Displayable interface
   @Override
