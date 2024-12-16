@@ -20,16 +20,5 @@ public class EnvelopedVirus extends Virus {
         return "/images/viruses/" + getName().toLowerCase() + "_enveloped.png";
     }
 
-    // Main method for test
-    public static void main(String[] args) {
-        EnvelopedVirus virus = new EnvelopedVirus(
-            "HIV", "RNA", "Icosahedral", "Spherical", 120.0f, "Lipid", true
-        );
-        System.out.println(virus.getDetails());
-        System.out.println("Image Path: " + virus.getImagePath());
-        System.out.println("Infection Mechanism: " + virus.getInfectionMechanism());
-        System.out.println("Spreading Method: " + virus.getSpreadingMethod());
-        System.out.println("Causing Diseases: " + virus.getCausingDiseases());
-        System.out.println("Infection Video Path: " + virus.getInfectionVideoPath());
-}
+    
 }

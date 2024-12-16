@@ -22,13 +22,5 @@ public class HepatitisBVirus extends EnvelopedVirus {
         return "Hepatitis B causes liver inflammation and can lead to cirrhosis or liver cancer.";
     }
 
-    public static void main(String[] args) {
-        HepatitisBVirus hepatitisB = new HepatitisBVirus();
-        System.out.println(hepatitisB.getDetails());
-        System.out.println("Image Path: " + hepatitisB.getImagePath());
-        System.out.println("Infection Mechanism: " + hepatitisB.getInfectionMechanism());
-        System.out.println("Spreading Method: " + hepatitisB.getSpreadingMethod());
-        System.out.println("Causing Diseases: " + hepatitisB.getCausingDiseases());
-        System.out.println("Infection Video Path: " + hepatitisB.getInfectionVideoPath());
-    }
+    
 }

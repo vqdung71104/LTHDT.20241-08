@@ -26,10 +26,5 @@ public class NucleicAcid extends VirusComponent {
     }
 
     // Main để kiểm tra
-    public static void main(String[] args) {
-        NucleicAcid nucleicAcid = new NucleicAcid("Viral RNA", "Single-stranded RNA", "RNA");
-        System.out.println(nucleicAcid.getDetails());
-        System.out.println("Specifications: " + nucleicAcid.getSpecifications());
-        System.out.println("Functionalities: " + nucleicAcid.getFunctionalities());
-    }
+    
 }

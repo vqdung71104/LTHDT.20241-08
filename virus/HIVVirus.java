@@ -22,13 +22,5 @@ public class HIVVirus extends EnvelopedVirus {
         return "HIV causes acquired immunodeficiency syndrome (AIDS).";
     }
 
-    public static void main(String[] args) {
-        HIVVirus hiv = new HIVVirus();
-        System.out.println(hiv.getDetails());
-        System.out.println("Image Path: " + hiv.getImagePath());
-        System.out.println("Infection Mechanism: " + hiv.getInfectionMechanism());
-        System.out.println("Spreading Method: " + hiv.getSpreadingMethod());
-        System.out.println("Causing Diseases: " + hiv.getCausingDiseases());
-        System.out.println("Infection Video Path: " + hiv.getInfectionVideoPath());
-    }
+  
 }
