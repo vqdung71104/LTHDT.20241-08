@@ -18,9 +18,26 @@ public class Virus implements Infectable, Displayable {
   // Getter
   public String getName() {
     return name;
+  }
+  
+
+  public String getShape() {
+    return shape;
 }
 
-  // Methods for Displayable interface
+public float getSize() {
+    return size;
+}
+
+public Capsid getCapsid() {
+    return capsid;
+}
+
+public NucleicAcid getNucleicAcid() {
+    return nucleicAcid;
+}
+
+// Methods for Displayable interface
   @Override
   public String getDetails() {
       return "Virus Name: " + name + "\n" +
