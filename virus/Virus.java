@@ -99,7 +99,7 @@ public NucleicAcid getNucleicAcid() {
   }
 
   // Main method for testing
-  public static void main(String[] args) {
+  /*public static void main(String[] args) {
       Virus virus = new Virus("HIV", "RNA", "Icosahedral", "Spherical", 120.0f);
       System.out.println(virus.getDetails());
       System.out.println("Image Path: " + virus.getImagePath());
@@ -107,5 +107,5 @@ public NucleicAcid getNucleicAcid() {
       System.out.println("Spreading Method: " + virus.getSpreadingMethod());
       System.out.println("Causing Diseases: " + virus.getCausingDiseases());
       System.out.println("Infection Video Path: " + virus.getInfectionVideoPath());
-  }
+  }*/
 }
