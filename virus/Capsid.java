@@ -25,11 +25,5 @@ public class Capsid extends VirusComponent {
         return "Protects and encloses the virus's genetic material.";
     }
 
-    // Main để kiểm tra
-    public static void main(String[] args) {
-        Capsid capsid = new Capsid("Icosahedral Capsid", "Highly symmetrical", "Icosahedral");
-        System.out.println(capsid.getDetails());
-        System.out.println("Specifications: " + capsid.getSpecifications());
-        System.out.println("Functionalities: " + capsid.getFunctionalities());
-    }
+    
 }

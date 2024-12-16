@@ -22,13 +22,5 @@ public class CoronaVirus extends EnvelopedVirus {
         return "Coronavirus causes diseases such as COVID-19.";
     }
 
-    public static void main(String[] args) {
-        CoronaVirus corona = new CoronaVirus();
-        System.out.println(corona.getDetails());
-        System.out.println("Image Path: " + corona.getImagePath());
-        System.out.println("Infection Mechanism: " + corona.getInfectionMechanism());
-        System.out.println("Spreading Method: " + corona.getSpreadingMethod());
-        System.out.println("Causing Diseases: " + corona.getCausingDiseases());
-        System.out.println("Infection Video Path: " + corona.getInfectionVideoPath());
-    }
+    
 }

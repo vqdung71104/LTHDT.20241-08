@@ -197,15 +197,5 @@ public class VirusAnimation extends JPanel implements ActionListener {
         frame.revalidate();
         frame.repaint();
     }
-        // Main frame
-    public static void main(String[] args) {
-        JFrame frame = new JFrame("Virus Infection Simulation with Log");
-        frame.setSize(800, 400);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-        // Virus selection dialog
-        launchVirusSelection(frame);
-
-        frame.setVisible(true);
-    }
+    
 }

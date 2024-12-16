@@ -57,29 +57,5 @@ public class VirusComponent implements Displayable {
         }
     }
 
-    // Main method for testing
-    public static void main(String[] args) {
-        // Kiểm tra với Capsid
-        VirusComponent capsid = new VirusComponent("Capsid", "Capsid", "Icosahedral structure");
-        System.out.println(capsid.getDetails());
-        System.out.println("Image Path: " + capsid.getImagePath());
-        System.out.println("Specifications: " + capsid.getSpecifications());
-        System.out.println("Functionalities: " + capsid.getFunctionalities());
-        System.out.println("===================================");
-
-        // Kiểm tra với Envelope
-        VirusComponent envelope = new VirusComponent("Envelope", "Envelope", "Lipid bilayer with proteins");
-        System.out.println(envelope.getDetails());
-        System.out.println("Image Path: " + envelope.getImagePath());
-        System.out.println("Specifications: " + envelope.getSpecifications());
-        System.out.println("Functionalities: " + envelope.getFunctionalities());
-        System.out.println("===================================");
-
-        // Kiểm tra với NucleicAcid
-        VirusComponent nucleicAcid = new VirusComponent("Nucleic Acid", "NucleicAcid", "RNA genetic material");
-        System.out.println(nucleicAcid.getDetails());
-        System.out.println("Image Path: " + nucleicAcid.getImagePath());
-        System.out.println("Specifications: " + nucleicAcid.getSpecifications());
-        System.out.println("Functionalities: " + nucleicAcid.getFunctionalities());
-    }
+   
 }
