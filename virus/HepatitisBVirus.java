@@ -21,6 +21,4 @@ public class HepatitisBVirus extends EnvelopedVirus {
     public String getCausingDiseases() {
         return "Hepatitis B causes liver inflammation and can lead to cirrhosis or liver cancer.";
     }
-
-    
 }

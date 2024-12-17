@@ -21,6 +21,4 @@ public class CoronaVirus extends EnvelopedVirus {
     public String getCausingDiseases() {
         return "Coronavirus causes diseases such as COVID-19.";
     }
-
-    
 }

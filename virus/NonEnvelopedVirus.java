@@ -8,9 +8,4 @@ public class NonEnvelopedVirus extends Virus {
     public String getInfectionMechanism() {
         return "Directly attaches to the host cell membrane using capsid proteins.";
     }
-
-    @Override
-    public String getImagePath() {
-        return "/images/nonenveloped/" + getName().toLowerCase() + ".png";
-    }
 }

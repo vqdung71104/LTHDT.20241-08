@@ -12,8 +12,4 @@ public class PolioVirus extends NonEnvelopedVirus {
     public String getCausingDiseases() {
         return "Causes poliomyelitis (polio).";
     }
-
-    public String getInfectionVideoPath() {
-        return "/videos/poliovirus_infection.mp4";
-    }
 }

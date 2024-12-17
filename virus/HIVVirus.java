@@ -21,6 +21,4 @@ public class HIVVirus extends EnvelopedVirus {
     public String getCausingDiseases() {
         return "HIV causes acquired immunodeficiency syndrome (AIDS).";
     }
-
-  
 }

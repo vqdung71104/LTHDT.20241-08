@@ -47,11 +47,6 @@ public NucleicAcid getNucleicAcid() {
              "Nucleic Acid Type: " + nucleicAcid.getType();
   }
 
-  @Override
-  public String getImagePath() {
-      return "/images/viruses/" + name.toLowerCase() + ".png";
-  }
-
   // Methods for Infectable interface
   @Override
   public String getInfectionMechanism() {
@@ -66,11 +61,6 @@ public NucleicAcid getNucleicAcid() {
   @Override
   public String getCausingDiseases() {
       return "Causes diseases like AIDS.";
-  }
-
-  @Override
-  public String getInfectionVideoPath() {
-      return "/videos/infections/" + name.toLowerCase() + "_infection.mp4";
   }
 
   // Inner Classes

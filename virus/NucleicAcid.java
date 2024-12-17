@@ -24,7 +24,4 @@ public class NucleicAcid extends VirusComponent {
     public String getFunctionalities() {
         return "Stores genetic information of the virus.";
     }
-
-    // Main để kiểm tra
-    
 }
