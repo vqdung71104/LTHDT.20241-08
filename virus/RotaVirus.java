@@ -12,8 +12,4 @@ public class RotaVirus extends NonEnvelopedVirus {
     public String getCausingDiseases() {
         return "Causes severe diarrhea in infants and young children.";
     }
-
-    public String getInfectionVideoPath() {
-        return "/videos/rotavirus_infection.mp4";
-    }
 }

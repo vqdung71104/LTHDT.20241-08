@@ -12,8 +12,4 @@ public class RhinoVirus extends NonEnvelopedVirus {
     public String getCausingDiseases() {
         return "Causes the common cold.";
     }
-
-    public String getInfectionVideoPath() {
-        return "/videos/rhinovirus_infection.mp4";
-    }
 }

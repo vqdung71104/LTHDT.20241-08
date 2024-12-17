@@ -13,12 +13,4 @@ public class EnvelopedVirus extends Virus {
     public String getDetails() {
         return super.getDetails() + "\n" + envelope.describe();
     }
-
-    // Override getImagePath
-    @Override
-    public String getImagePath() {
-        return "/images/viruses/" + getName().toLowerCase() + "_enveloped.png";
-    }
-
-    
 }

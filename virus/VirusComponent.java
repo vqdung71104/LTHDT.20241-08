@@ -33,12 +33,7 @@ public class VirusComponent implements Displayable {
                "Type: " + type + "\n" +
                "Details: " + details;
     }
-
-    @Override
-    public String getImagePath() {
-        return "/images/components/" + name.toLowerCase() + ".png";
-    }
-
+    
     // Additional methods
     public String getSpecifications() {
         return "Specifications for " + name + " (" + type + ")";

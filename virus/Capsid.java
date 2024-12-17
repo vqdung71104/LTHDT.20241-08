@@ -24,6 +24,4 @@ public class Capsid extends VirusComponent {
     public String getFunctionalities() {
         return "Protects and encloses the virus's genetic material.";
     }
-
-    
 }
