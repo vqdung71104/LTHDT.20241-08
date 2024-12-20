@@ -54,7 +54,7 @@ public abstract class BaseFrame extends JFrame implements ActionListener {
                 showHelpFrame();
                 break;
             case "Exit Application":
-                exitApplication();
+                exitApplicationFrame();
                 break;
             case "Enveloped Virus":
                 envelopedVirusFrame();
@@ -80,8 +80,10 @@ public abstract class BaseFrame extends JFrame implements ActionListener {
         this.dispose();
     }
 
-    public void exitApplication() {
-        System.exit(0);
+    public void exitApplicationFrame() {
+        ExitApplicationFrame exitFrame = new ExitApplicationFrame(getDataModel());
+        exitFrame.setVisible(true);
+        this.dispose();
     }
 
     public void envelopedVirusFrame() {
