@@ -1,8 +1,6 @@
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
+import javax.swing.*;
 
 public abstract class BaseFrame extends JFrame implements ActionListener {
     private DataModel model;
@@ -31,14 +29,16 @@ public abstract class BaseFrame extends JFrame implements ActionListener {
         envelopedVirusButton.addActionListener(this);
         JButton nonEnvelopedVirusButton = new JButton("Non Enveloped Virus");
         nonEnvelopedVirusButton.addActionListener(this);
+        JButton virusSimulationButton = new JButton("Virus Simulation");
+        virusSimulationButton.addActionListener(this);
         JButton exitButton = new JButton("Exit Application");
         exitButton.addActionListener(this);
-
 
         panel.add(homeButton);
         panel.add(helpButton);
         panel.add(envelopedVirusButton);
         panel.add(nonEnvelopedVirusButton);
+        panel.add(virusSimulationButton);
         panel.add(exitButton);
         add(panel);
     }
@@ -54,13 +54,16 @@ public abstract class BaseFrame extends JFrame implements ActionListener {
                 showHelpFrame();
                 break;
             case "Exit Application":
-                exitApplicationFrame();
+                exitApplication();
                 break;
             case "Enveloped Virus":
                 envelopedVirusFrame();
                 break;
             case "Non Enveloped Virus":
                 nonEnvelopedVirusFrame();
+                break;
+            case "Virus Simulation":
+                showVirusSimulation();
                 break;
         }
     }
@@ -77,25 +80,36 @@ public abstract class BaseFrame extends JFrame implements ActionListener {
         this.dispose();
     }
 
-    public void exitApplicationFrame() {
-        ExitApplicationFrame exitFrame = new ExitApplicationFrame(getDataModel());
-        exitFrame.setVisible(true);
-        this.dispose();
+    public void exitApplication() {
+        System.exit(0);
     }
-    
-    
-    
 
     public void envelopedVirusFrame() {
         EnvelopedVirusFrame envelopedVirusFrame = new EnvelopedVirusFrame(getDataModel());
         envelopedVirusFrame.setVisible(true);
         this.dispose();
     }
-    
 
-    public void nonEnvelopedVirusFrame(){
+    public void nonEnvelopedVirusFrame() {
         NonEnvelopedVirusFrame nonEnvelopedVirusFrame = new NonEnvelopedVirusFrame(getDataModel());
         nonEnvelopedVirusFrame.setVisible(true);
         this.dispose();
+    }
+
+    public void showVirusSimulation() {
+        getContentPane().removeAll();
+        VirusAnimation.launchVirusSelection(this);
+    }
+
+    public void showVirusSimulationPanel(VirusAnimation simulation) {
+
+        JSplitPane splitPane = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT);
+        splitPane.setLeftComponent(simulation);
+        splitPane.setDividerLocation(600);
+
+        getContentPane().removeAll();
+        add(splitPane);
+        revalidate();
+        repaint();
     }
 }

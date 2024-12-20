@@ -1,6 +1,5 @@
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -8,7 +7,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.SwingUtilities;
 
-public class NonEnvelopedFrame extends BaseFrame implements ActionListener {
+public class NonEnvelopedFrame extends BaseFrame {
     protected Virus virus; // Virus hiện tại
     private JTextArea detailsTextArea;
 
@@ -85,6 +84,5 @@ public class NonEnvelopedFrame extends BaseFrame implements ActionListener {
         detailsTextArea.append("Name: " + virus.getName() + "\n");
         detailsTextArea.append("Spreading Method: " + virus.getSpreadingMethod() + "\n");
         detailsTextArea.append("Infection Mechanism: " + virus.getInfectionMechanism() + "\n");
-        detailsTextArea.append("Infection Video Path: " + virus.getInfectionVideoPath() + "\n");
     }
 }

@@ -4,11 +4,8 @@ import javax.swing.*;
 
 public class HelpFrame extends BaseFrame {
 
-    private DataModel model;
-
     public HelpFrame(DataModel model) {
         super(model);
-        this.model = model;
         initUI();
     }
 
