@@ -45,10 +45,9 @@ public class VirusAnimation extends JPanel implements ActionListener {
         logArea.setBorder(BorderFactory.createTitledBorder("Infection Log"));
         logArea.append("Simulation started for: " + virusName + "\n");
 
-        // Back button
-        JButton backButton = new JButton("Back to Virus Selection");
-        backButton.addActionListener(e -> resetSimulation());
         setLayout(new BorderLayout());
+        JButton backButton = new JButton("Back to Main Menu");
+        backButton.addActionListener(e -> resetSimulation());
         add(backButton, BorderLayout.NORTH);
     }
 
@@ -60,7 +59,10 @@ public class VirusAnimation extends JPanel implements ActionListener {
         parentFrame.getContentPane().removeAll();
         parentFrame.revalidate();
         parentFrame.repaint();
-        VirusAnimation.launchVirusSelection(parentFrame);
+
+        if (parentFrame instanceof BaseFrame) {
+            ((BaseFrame) parentFrame).showMainFrame();
+        }
     }
 
     @Override
@@ -137,13 +139,20 @@ public class VirusAnimation extends JPanel implements ActionListener {
                 "Hepatitis B (Enveloped Virus)",
                 "Polio (Non-enveloped Virus)",
                 "Rotavirus (Non-enveloped Virus)",
-                "Rhinovirus (Non-enveloped Virus)"
+                "Rhinovirus (Non-enveloped Virus)",
+                "Cancel"
         };
 
         // Virus selection log
         String selectedVirus = (String) JOptionPane.showInputDialog(
                 null, "Choose a Virus to Simulate:", "Virus Selection",
                 JOptionPane.QUESTION_MESSAGE, null, options, options[0]);
+        if (selectedVirus == null || selectedVirus.equals("Cancel")) {
+            if (frame instanceof BaseFrame) {
+                ((BaseFrame) frame).showMainFrame();
+            }            
+            return;
+        }
 
         // Infection stage-specific messages
         String stage1Message = "";
@@ -193,6 +202,7 @@ public class VirusAnimation extends JPanel implements ActionListener {
         splitPane.setRightComponent(new JScrollPane(simulation.logArea));
         splitPane.setDividerLocation(600);
 
+        frame.getContentPane().removeAll();
         frame.add(splitPane);
         frame.revalidate();
         frame.repaint();

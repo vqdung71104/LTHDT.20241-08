@@ -3,11 +3,8 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 
 public class EnvelopedVirusFrame extends BaseFrame {
-    private DataModel model;
-
     public EnvelopedVirusFrame(DataModel model) {
         super(model);
-        this.model = model;
         initEnveloped();
     }
 
