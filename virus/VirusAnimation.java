@@ -140,7 +140,6 @@ public class VirusAnimation extends JPanel implements ActionListener {
                 "Polio (Non-enveloped Virus)",
                 "Rotavirus (Non-enveloped Virus)",
                 "Rhinovirus (Non-enveloped Virus)",
-                "Cancel"
         };
 
         // Virus selection log
