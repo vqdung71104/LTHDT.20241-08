@@ -7,3 +7,5 @@ Thông tin thành viên:
 3. Phan Hải Dương - 20194533
 4. Nguyễn Tùng Dương - 20225823
 5. Phạm Trường Dương - 20226105
+
+Link Video Demo: https://drive.google.com/file/d/1pN3xshkeGKztZ_97rk_b1io4QpZrvMF1/view
